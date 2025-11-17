@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: telemetry-processor
+
+  kafka:
+    bootstrap-servers: localhost:29092
+    consumer:
+      group-id: telemetry-processor-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

@@ -1,9 +1,7 @@
-from dataclasses import field
-from ensurepip import bootstrap
+import json
+import time
 
 import pandas as pd
-import time
-import json
 from kafka import KafkaProducer
 
 KAFKA_BOOTSTRAP_SERVERS = 'localhost:29092'
